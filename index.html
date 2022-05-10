@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Encriptador</title>
   </head>
@@ -14,10 +20,15 @@
           type="text"
           id="input-encriptador"
           class="input input-encriptador"
-          value="Ingrese el texto aqui"
+          placeholder="Ingrese el texto aqui"
         />
         <div class="button--encriptador">
-          <input type="button" class="button" value="Encriptar" />
+          <input
+            type="button"
+            class="button"
+            value="Encriptar"
+            onclick="encriptar()"
+          />
           <input
             type="button"
             class="button button--light"
@@ -36,4 +47,5 @@
       </div>
     </form>
   </body>
+  <script src="app.js"></script>
 </html>

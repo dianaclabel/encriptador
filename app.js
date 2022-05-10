@@ -1,18 +1,18 @@
-var encriptador = document.getElementById("input-encriptador").value;
-var copy = document.getElementById("inputn--copy").value;
+let inputEl = document.getElementById("input-encriptador");
+let ouput = document.getElementById("input--copy");
 
-var wordEncriptado;
+function encriptar() {
+  let entrada = inputEl.value;
+  let wordMinuscula = entrada.toLowerCase();
 
-encriptador.tolowercase();
+  for (let i = 0; i < 5; i++) {
+    let vocals = ["a", "e", "i", "o", "u"];
+    let words = ["ai", "enter", "imes", "ober", "ufac"];
 
-let vocals = ["a", "e", "i", "o", "u"];
-
-for (let i = 0; 0 < vocals.length; i++) {
-  let words = ["ai", "enter", "imes", "ober", "ufac"];
-
-  if (encriptador.includes(vocals[i])) {
-    wordEncriptado = encriptador.replaceAll([i], words[i]);
+    if (wordMinuscula.includes(vocals[i])) {
+      wordMinuscula = wordMinuscula.replaceAll(vocals[i], words[i]);
+    }
   }
 }
 
-console.log(wordEncriptado);
+function mostrarMessage() {}

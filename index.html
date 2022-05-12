@@ -15,6 +15,7 @@
   </head>
   <body>
     <form action="/" class="form">
+      <figure><img src="./asset/Logo.png" alt="Logo" /></figure>
       <div class="form__encriptador">
         <input
           type="text"
@@ -23,17 +24,18 @@
           placeholder="Ingrese el texto aqui"
         />
         <div class="button--encriptador">
+          <label for="encriptar" class="label">
+            <img src="./asset/Vector.png" />Solo letras minúsculas y sin
+            acentos</label
+          >
           <input
+            id="encriptar"
             type="button"
             class="button"
             value="Encriptar"
             onclick="encriptar()"
           />
-          <input
-            type="button"
-            class="button button--light"
-            value=" Desencriptar"
-          />
+          <input class="button" type="button" value=" Desencriptar" />
         </div>
       </div>
 

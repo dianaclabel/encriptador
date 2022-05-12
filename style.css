@@ -24,7 +24,8 @@
   flex-direction: column;
   width: 70%;
   height: 90vh;
-  text-align: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .input-encriptador {
@@ -35,10 +36,41 @@
   border-color: var(--background-primary);
 }
 
+.button {
+  border-radius: 15px;
+  border-style: none;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 12px;
+  font-weight: 400;
+  font-family: "inter";
+  font-size: 16px;
+  width: 260px;
+}
+
+div .label {
+  display: block;
+  font-size: 12px;
+  color: var(--color-secundary);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.label img {
+  position: relative;
+  left: -5px;
+  top: 3px;
+}
+
 .form__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
   width: 30%;
   height: 90vh;
-  border-radius: 10px;
+  border-radius: 20px;
 
   border-color: var(--background-secundary);
   background-color: var(--background-secundary);
@@ -48,4 +80,7 @@
   height: 90%;
   border-radius: 10px;
   border-style: none;
+}
+.button--light {
+  margin-top: 29px;
 }

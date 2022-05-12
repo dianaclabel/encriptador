@@ -12,7 +12,6 @@ function encriptar() {
     if (wordMinuscula.includes(vocals[i])) {
       wordMinuscula = wordMinuscula.replaceAll(vocals[i], words[i]);
     }
+    console.log(wordMinuscula);
   }
 }
-
-function mostrarMessage() {}

@@ -29,22 +29,28 @@
             acentos</label
           >
           <input
-            id="encriptar"
+            id="input-encriptador"
             type="button"
             class="button"
             value="Encriptar"
             onclick="encriptar()"
           />
-          <input class="button" type="button" value=" Desencriptar" />
+          <input
+            class="button"
+            type="button"
+            value="Desencriptar"
+            onclick="desencriptar()"
+          />
         </div>
       </div>
 
       <div class="form__copy">
-        <input type="text" id=" input--copy" class="input--copy" />
+        <input type="text" id="input--copy" class="input--copy" />
         <input
           type="button"
           class="button button--light button--copy"
           value="Copiar"
+          onclick="copy()"
         />
       </div>
     </form>

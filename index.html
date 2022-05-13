@@ -17,12 +17,13 @@
     <form action="/" class="form">
       <figure><img src="./asset/Logo.png" alt="Logo" /></figure>
       <div class="form__encriptador">
-        <input
+        <textarea
           type="text"
           id="input-encriptador"
           class="input input-encriptador"
           placeholder="Ingrese el texto aqui"
-        />
+          autocomplete="off"
+        ></textarea>
         <div class="button--encriptador">
           <label for="encriptar" class="label">
             <img src="./asset/Vector.png" />Solo letras minúsculas y sin
@@ -45,22 +46,24 @@
       </div>
 
       <div class="form__copy">
-        <div class="input--img">
+        <figure class="input--img">
           <img src="./asset/Muñeco.png" alt="muñeco" />
           <p>Ningún mensaje fue encontrado</p>
           <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </div>
-        <input
+        </figure>
+        <textarea
           type="text"
           id="input--copy"
           class="input--copy"
           style="display: none"
-        />
+          autocomplete="off"
+        ></textarea>
         <input
           type="button"
           class="button button--light button--copy"
           value="Copiar"
           onclick="copy()"
+          style="display: none"
         />
       </div>
     </form>

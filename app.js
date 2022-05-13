@@ -16,8 +16,8 @@ function encriptar() {
   let entrada = inputEl.value;
   let wordMinuscula = entrada.toLowerCase();
   for (let i = 0; i < 5; i++) {
-    let vocals = ["a", "e", "i", "o", "u"];
-    let words = ["ai", "enter", "imes", "ober", "ufac"];
+    let vocals = ["e", "i", "a", "o", "u"];
+    let words = ["enter", "imes", "ai", "ober", "ufac"];
 
     if (wordMinuscula.includes(vocals[i])) {
       wordMinuscula = wordMinuscula.replaceAll(vocals[i], words[i]);

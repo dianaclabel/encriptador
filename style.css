@@ -75,6 +75,15 @@ div .label {
   border-color: var(--background-secundary);
   background-color: var(--background-secundary);
 }
+.input--img {
+  width: 100%;
+  height: 90%;
+}
+
+.input--img img {
+  width: 100%;
+}
+
 .input--copy {
   width: 100%;
   height: 90%;

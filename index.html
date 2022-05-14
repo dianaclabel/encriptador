@@ -15,8 +15,10 @@
   </head>
   <body>
     <form action="/" class="form">
-      <figure><img src="./asset/Logo.png" alt="Logo" /></figure>
       <div class="form__encriptador">
+        <figure class="form__logo">
+          <img src="./asset/Logo.png" alt="Logo" />
+        </figure>
         <textarea
           type="text"
           id="input-encriptador"
@@ -40,7 +42,7 @@
           </div>
 
           <input
-            class="button"
+            class="button button--desencriptar"
             type="button"
             value="Desencriptar"
             onclick="desencriptar()"
@@ -49,7 +51,7 @@
       </div>
 
       <div class="form__copy">
-        <figure class="input--img">
+        <figure class="input--img" style="display: none">
           <img src="./asset/Muñeco.png" alt="muñeco" />
           <p>Ningún mensaje fue encontrado</p>
           <p>Ingresa el texto que desees encriptar o desencriptar.</p>
@@ -58,7 +60,6 @@
           type="text"
           id="input--copy"
           class="input--copy"
-          style="display: none"
           autocomplete="off"
         ></textarea>
         <input
@@ -66,7 +67,6 @@
           class="button button--light button--copy"
           value="Copiar"
           onclick="copy()"
-          style="display: none"
         />
       </div>
     </form>

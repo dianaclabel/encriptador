@@ -1,6 +1,13 @@
 let inputEl = document.getElementById("input-encriptador");
 let ouput = document.getElementById("input--copy");
 
+/*inputEl.addEventListener("click", encriptarOn());
+
+function encriptarOn() {
+  inputEl.className = ".button:hover";
+  encriptar();
+}*/
+
 /*function messageEncriptado() {
   let encriptado = encriptar();
   ouput.value = encriptado;

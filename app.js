@@ -1,27 +1,22 @@
 let inputEl = document.getElementById("input-encriptador");
 let ouput = document.getElementById("input--copy");
+let ouputImage = document.getElementById("input--img");
+let btnCopy = document.getElementById("button--copy");
 
-/*inputEl.addEventListener("click", encriptarOn());
-
-function encriptarOn() {
-  inputEl.className = ".button:hover";
-  encriptar();
-}*/
-
-/*function messageEncriptado() {
-  let encriptado = encriptar();
-  ouput.value = encriptado;
-  inputEl.value = "";
+function mostrarImage() {
+  if (ouputImage.style.display === "none") {
+    ouputImage.style.display = "flex";
+  } else {
+    ouputImage.style.display = "none";
+    btnCopy.style.display = "inline-block";
+    ouput.style.display = "inline-block";
+  }
 }
-function messageDesencriptado() {
-  let desencriptado = desencriptar();
-  ouput.value = desencriptado;
-  inputEl.value = "";
-}*/
 
 function encriptar() {
   let entrada = inputEl.value;
   let wordMinuscula = entrada.toLowerCase();
+
   for (let i = 0; i < 5; i++) {
     let vocals = ["e", "i", "a", "o", "u"];
     let words = ["enter", "imes", "ai", "ober", "ufac"];
@@ -30,6 +25,7 @@ function encriptar() {
       wordMinuscula = wordMinuscula.replaceAll(vocals[i], words[i]);
     }
   }
+  mostrarImage();
   ouput.value = wordMinuscula;
   inputEl.value = "";
 }
@@ -46,6 +42,7 @@ function desencriptar() {
       wordMinuscula = wordMinuscula.replaceAll(words[i], vocals[i]);
     }
   }
+
   ouput.value = wordMinuscula;
   inputEl.value = "";
 }

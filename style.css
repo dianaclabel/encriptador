@@ -85,10 +85,16 @@
   height: 60px;
   cursor: pointer;
 }
-.button:focus {
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
   background-color: var(--btn-offclick);
   border-color: var(--color-primary);
   color: var(--color-primary);
+  opacity: initial;
 }
 
 div .label {
@@ -160,7 +166,9 @@ div .label {
   font-weight: 400;
   font-family: "inter";
   line-height: 48px;
+  display: none;
 }
 .button--light {
   margin-top: 29px;
+  display: none;
 }
